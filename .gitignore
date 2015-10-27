@@ -17,7 +17,7 @@ proguard/
 lint.xml
 
 # Android Studio
-*.jks
+#*.jks
 .DS_Store
 /local.properties
 /.idea/workspace.xml

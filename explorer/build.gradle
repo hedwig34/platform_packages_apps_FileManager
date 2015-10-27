@@ -26,6 +26,14 @@ android {
         // Testing support library includes duplicate files from junit-dep and hamcrest-core
         exclude 'LICENSE.txt'
     }
+    signingConfigs {
+        release {
+            storeFile file("TeamOctOs_testing.jks")
+            storePassword "password"
+            keyAlias "TeamOctOs"
+            keyPassword "password"
+        }
+    }
 
     buildTypes {
         debug {
@@ -36,6 +44,7 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles 'proguard-android.txt'
+            signingConfig signingConfigs.release
         }
     }
 }
