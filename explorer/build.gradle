@@ -30,7 +30,7 @@ android {
         release {
             storeFile file("TeamOctOs_testing.jks")
             storePassword "password"
-            keyAlias "TeamOctOs"
+            keyAlias "TeamOctOs_testing"
             keyPassword "password"
         }
     }
